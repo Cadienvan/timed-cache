@@ -1,6 +1,12 @@
 # What is this?
 A simple in-memory time-based cache for both objects and function execution.
 
+# How do I install it?
+You can install it by using the following command:
+```bash
+npm install @cadienvan/timed-cache
+```
+
 # Why did you build it?
 I needed a simple cache for a function that was being called repeatedly with the same arguments. I wanted to cache the results for a certain amount of time, and then re-run the function when the cache expired.
 
