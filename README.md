@@ -39,91 +39,91 @@ As soon as a new element is added to the cache, the oldest one will be removed.
 
 You can add an element to the cache by using the `set` method.
 
-    ```js
-    cache.set("key", "value");
-    ```
+```js
+cache.set("key", "value");
+```
 
 # How can I retrieve an element from the cache?
 
 You can retrieve an element from the cache by using the `get` method.
 
-    ```js
-    cache.get("key");
-    ```
+```js
+cache.get("key");
+```
 
 # How can I remove an element from the cache?
 
 You can remove an element from the cache by using the `delete` method.
 
-    ```js
-    cache.delete("key");
-    ```
+```js
+cache.delete("key");
+```
 
 # How can I clear the cache?
 
 You can clear the cache by using the `clear` method.
 
-    ```js
-    cache.clear();
-    ```
+```js
+cache.clear();
+```
 
 # How can I get the size of the cache?
 
 You can get the size of the cache by using the `size` property.
 
-    ```js
-    cache.size;
-    ```
+```js
+cache.size;
+```
 
 # How can I get the keys of the cache?
 
 You can get the keys of the cache by using the `keys` method.
 
-    ```js
-    cache.keys();
-    ```
+```js
+cache.keys();
+```
 
 # How can I get the values of the cache?
 
 You can get the values of the cache by using the `values` method.
 
-    ```js
-    cache.values();
-    ```
+```js
+cache.values();
+```
 
 # How can I get the entries of the cache?
 
 You can get the entries ([key, value] pairs) of the cache by using the `entries` method.
 
-    ```js
-    cache.entries();
-    ```
+```js
+cache.entries();
+```
 
 # How can I iterate over the cache?
 
 You can iterate over the cache by using the `forEach` method.
 
-    ```js
-    cache.forEach((value, key) => {
-      console.log(key, value);
-    });
-    ```
+```js
+cache.forEach((value, key) => {
+  console.log(key, value);
+});
+```
 
 # How can I check if an element is in the cache?
 
 You can check if an element is in the cache by using the `has` method.
 
-    ```js
-    cache.has("key");
-    ```
+```js
+cache.has("key");
+```
 
 # How can I get the time to live of an element?
 
 You can get the time to live of an element by using the `ttl` method.
 
-    ```js
-    cache.ttl("key");
-    ```
+```js
+cache.ttl("key");
+```
 
 # How does it work under the hood?
 
