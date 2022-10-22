@@ -71,22 +71,22 @@ export class TimedCache {
   }
 
   forEach(callback: (value: any, key: string, map: Map<string, any>) => void) {
-	this.#appCache.forEach(callback);
+    this.#appCache.forEach(callback);
   }
 
   [Symbol.iterator]() {
-	return this.#appCache[Symbol.iterator]();
+    return this.#appCache[Symbol.iterator]();
   }
 
   [Symbol.toStringTag]() {
-	return this.#appCache[Symbol.toStringTag];
+    return this.#appCache[Symbol.toStringTag];
   }
 
   ttl(k: string) {
-	if (this.#appCache.has(k)) {
-	  const resp = this.#appCache.get(k);
-	  return resp.timestamp + resp.length * 1000 - new Date().getTime();
-	}
-	return -1;
+    if (this.#appCache.has(k)) {
+      const resp = this.#appCache.get(k);
+      return resp.timestamp + resp.length * 1000 - new Date().getTime();
+    }
+    return -1;
   }
 }

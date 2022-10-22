@@ -124,6 +124,8 @@ You can get the time to live of an element by using the `ttl` method.
 ```js
 cache.ttl("key");
 ```
+# Does the class support key-based expiration?
+No, it doesn't. You can use the [@cadienvan/key-value-cache](https://github.com/Cadienvan/key-value-cache) library in order to achieve this.
 
 # How does it work under the hood?
 
