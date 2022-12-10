@@ -19,7 +19,7 @@ I needed a simple cache for a function that was being called repeatedly with the
 You can import and instance a new TimedCache object as follows:
 
 ```js
-import { TimedCache } from "@cadienvan/timed-cache";
+import { TimedCache } from '@cadienvan/timed-cache';
 const cache = new TimedCache();
 ```
 
@@ -40,7 +40,7 @@ As soon as a new element is added to the cache, the oldest one will be removed.
 You can add an element to the cache by using the `set` method.
 
 ```js
-cache.set("key", "value");
+cache.set('key', 'value');
 ```
 
 # How can I retrieve an element from the cache?
@@ -48,7 +48,7 @@ cache.set("key", "value");
 You can retrieve an element from the cache by using the `get` method.
 
 ```js
-cache.get("key");
+cache.get('key');
 ```
 
 # How can I remove an element from the cache?
@@ -56,7 +56,7 @@ cache.get("key");
 You can remove an element from the cache by using the `delete` method.
 
 ```js
-cache.delete("key");
+cache.delete('key');
 ```
 
 # How can I clear the cache?
@@ -114,7 +114,7 @@ cache.forEach((value, key) => {
 You can check if an element is in the cache by using the `has` method.
 
 ```js
-cache.has("key");
+cache.has('key');
 ```
 
 # How can I get the time to live of an element?
@@ -122,12 +122,18 @@ cache.has("key");
 You can get the time to live of an element by using the `ttl` method.
 
 ```js
-cache.ttl("key");
+cache.ttl('key');
 ```
+
 # Does the class support key-based expiration?
+
 No, it doesn't. You can use the [@cadienvan/key-value-cache](https://github.com/Cadienvan/key-value-cache) library in order to achieve this.
 
 # How does it work under the hood?
 
 The cache is a simple object that stores the results of a function call in memory leveraging the `Map` constructor.  
 The cache is time-based, so the results are only valid for a certain amount of time. If the cache expires, the wrapped object / functions is re-run and the results are cached again.
+
+# ToDo
+
+- [ ] Add tests

@@ -3,7 +3,6 @@ lerna-debug.log*
 
 node_modules
 dist
-.npmignore
 
 .vscode/*
 !.vscode/extensions.json
@@ -14,3 +13,5 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+coverage
